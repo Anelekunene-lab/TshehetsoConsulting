@@ -864,6 +864,31 @@ section[aria-labelledby="val-h"] .eyebrow{justify-content:center}
   .portrait img{animation-duration:12s!important}
 }
 </style>
+<style>
+/* ===== v13: phones swipe in pages: 2 "What to expect" cards, 4 services at a time ===== */
+@media (max-width:719px){
+  /* What to expect: two cards per swipe (3 swipes in all) */
+  .xcards{gap:10px!important;scroll-padding-inline:16px}
+  .xcards>li,.xwhere{flex:0 0 calc(50% - 5px)!important;scroll-snap-align:none}
+  .xcards>li:nth-child(odd){scroll-snap-align:start;scroll-snap-stop:always}
+  .xcard{border-radius:18px}
+  .xcard .pic,.xfee .xcard .pic{aspect-ratio:4/3!important;height:auto!important}
+  .xwhere .maps{grid-template-columns:1fr!important;height:auto!important;aspect-ratio:4/3}
+  .xwhere .maps a{height:auto}
+  .xwhere .maps img{min-height:0!important;height:100%!important}
+  .xt{padding:10px 10px 12px!important}
+  .xt b{font-size:.95rem}
+  .xt .s{font-size:.8rem}
+  /* services: a 2 × 2 page of tiles per swipe */
+  .stiles{display:grid!important;grid-template-columns:none!important;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:calc(50% - 6px);gap:16px 12px!important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px}
+  .stiles>li{flex:none!important;scroll-snap-align:none}
+  .stiles>li:nth-child(4n+1){scroll-snap-align:start;scroll-snap-stop:always}
+  .stiles .pic.sq{aspect-ratio:4/3}
+  .stiles{gap:12px 12px!important}
+}
+.svc-hint{display:none}
+@media (max-width:719px){.svc-hint{display:flex;align-items:center;gap:6px;margin-top:4px;font-size:.9rem;font-weight:800;color:var(--terra-text)}.svc-hint .ic{width:18px;height:18px}}
+</style>
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap head">
@@ -875,7 +900,7 @@ section[aria-labelledby="val-h"] .eyebrow{justify-content:center}
 </header>
 <main id="main">
 <section class="page-head"><div class="wrap"><h1><span class="kicker">Your privacy</span>Privacy and POPIA</h1><p class="lead">This page explains how Tshehetso Consulting looks after your personal information, in line with the Protection of Personal Information Act (POPIA).</p></div></section>
-<section><div class="wrap prose"><div><h2>What we collect</h2><p>When you WhatsApp, call or visit us, we keep your name, contact number and the details you choose to share, so that we can book and support you. Session notes are kept confidential.</p></div><div><h2>How we use it</h2><p>Only to arrange your sessions, provide your care and, if you choose, claim from your medical aid. We never sell your information or share it for marketing.</p></div><div><h2>This website</h2><p>If you use the call-back form, we keep your name, phone number, how you would like to meet and, if you choose, what you would like help with, only so that we can call you back. These requests are kept in a private spreadsheet that only the practice can open. You can ask us to delete them at any time. We use Google tools to count visits and taps on WhatsApp or Call, and these may use cookies. These counts don&#x27;t show us who you are.</p></div><div><h2>Your rights</h2><p>You may ask to see, correct or delete the personal information we hold about you. WhatsApp or call us on 072 831 1001.</p></div><div><h2>Complaints</h2><p>If you are unhappy with how we handle your information, you may contact the Information Regulator (South Africa) at inforegulator.org.za.</p></div><p class="note">Last updated: November 2026</p></div></section>
+<section><div class="wrap prose"><div><h2>What we collect</h2><p>When you WhatsApp, call or visit us, we keep your name, contact number and the details you choose to share, so that we can book and support you. Session notes are kept confidential.</p></div><div><h2>How we use it</h2><p>Only to arrange your sessions, provide your care and, if you choose, claim from your medical aid. We never sell your information or share it for marketing.</p></div><div><h2>This website</h2><p>If you use the call-back form, we keep your name, phone number, how you would like to meet and, if you choose, what you would like help with, only so that we can call you back. These requests are kept in a private spreadsheet that only the practice can open. You can ask us to delete them at any time. We use Google tools to count visits and taps on WhatsApp or Call, and these may use cookies. These counts don&#x27;t show us who you are.</p></div><div><h2>Your rights</h2><p>You may ask to see, correct or delete the personal information we hold about you. WhatsApp or call us on <a href="tel:+27728311001" data-contact="call" data-loc="privacy">072 831 1001</a>.</p></div><div><h2>Complaints</h2><p>If you are unhappy with how we handle your information, you may contact the Information Regulator (South Africa) at inforegulator.org.za.</p></div><p class="note">Last updated: November 2026</p></div></section>
 </main>
 <footer><div class="wrap">
   <p><b>Tshehetso Consulting</b> · A social work practice in Protea Glen and surrounding areas</p>

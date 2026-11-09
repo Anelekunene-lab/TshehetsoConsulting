@@ -864,6 +864,31 @@ section[aria-labelledby="val-h"] .eyebrow{justify-content:center}
   .portrait img{animation-duration:12s!important}
 }
 </style>
+<style>
+/* ===== v13: phones swipe in pages: 2 "What to expect" cards, 4 services at a time ===== */
+@media (max-width:719px){
+  /* What to expect: two cards per swipe (3 swipes in all) */
+  .xcards{gap:10px!important;scroll-padding-inline:16px}
+  .xcards>li,.xwhere{flex:0 0 calc(50% - 5px)!important;scroll-snap-align:none}
+  .xcards>li:nth-child(odd){scroll-snap-align:start;scroll-snap-stop:always}
+  .xcard{border-radius:18px}
+  .xcard .pic,.xfee .xcard .pic{aspect-ratio:4/3!important;height:auto!important}
+  .xwhere .maps{grid-template-columns:1fr!important;height:auto!important;aspect-ratio:4/3}
+  .xwhere .maps a{height:auto}
+  .xwhere .maps img{min-height:0!important;height:100%!important}
+  .xt{padding:10px 10px 12px!important}
+  .xt b{font-size:.95rem}
+  .xt .s{font-size:.8rem}
+  /* services: a 2 × 2 page of tiles per swipe */
+  .stiles{display:grid!important;grid-template-columns:none!important;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:calc(50% - 6px);gap:16px 12px!important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:16px}
+  .stiles>li{flex:none!important;scroll-snap-align:none}
+  .stiles>li:nth-child(4n+1){scroll-snap-align:start;scroll-snap-stop:always}
+  .stiles .pic.sq{aspect-ratio:4/3}
+  .stiles{gap:12px 12px!important}
+}
+.svc-hint{display:none}
+@media (max-width:719px){.svc-hint{display:flex;align-items:center;gap:6px;margin-top:4px;font-size:.9rem;font-weight:800;color:var(--terra-text)}.svc-hint .ic{width:18px;height:18px}}
+</style>
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap head">
