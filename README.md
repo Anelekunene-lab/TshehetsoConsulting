@@ -2,7 +2,7 @@
 
 Static, mobile-first website for Tshehetso Consulting, a social work and counselling practice in Protea Glen, Soweto.
 
-**Status:** Draft v2, in client review.
+**Status:** Final, shared with the client. Live on GitHub Pages: https://anelekunene-lab.github.io/TshehetsoConsulting/
 
 ## Pages
 
