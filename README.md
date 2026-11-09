@@ -2,7 +2,7 @@
 
 Static, mobile-first website for Tshehetso Consulting, a social work and counselling practice in Protea Glen, Soweto.
 
-**Status:** Draft v2, in client review. Real photos still to come: see `IMAGE-PROMPTS.md`.
+**Status:** Draft v2, in client review.
 
 ## Pages
 
@@ -25,3 +25,26 @@ The form on Home and Contact posts to a Make webhook, which adds a row to the pr
 - Change the home page `<title>` from "DRAFT v2 - Tshehetso Consulting Website" back to "Counselling in Protea Glen, Soweto | Tshehetso Consulting".
 - Add the Google Tag Manager snippet (placeholder comment in each page's `<head>`).
 - Confirm `assets/og.jpg` (link-preview image) and the canonical URLs match the live domain, www.tshehetsoconsulting.co.za.
+
+## Photo credits
+
+Service and "What to expect" photos are from [Pexels](https://www.pexels.com/license/) (free for commercial use, no attribution required), except two generated with Gamma.
+
+| File | Source |
+|---|---|
+| `svc-stress.webp`, `expect-medical.webp` | Generated with Gamma AI |
+| `svc-grief.webp` | Pexels photo 10496918 |
+| `svc-trauma.webp` | Pexels photo 5699489 |
+| `svc-family.webp` | Pexels photo 6189926 |
+| `svc-parenting.webp` | Pexels photo 9870222 |
+| `svc-youth.webp` | Pexels photo 36729613 |
+| `svc-gbv.webp` | Pexels photo 8996007 |
+| `svc-substance.webp` | Pexels photo 7579301 |
+| `svc-hiv.webp` | Pexels photo 6303652 |
+| `svc-group.webp` | Pexels photo 8556340 |
+| `svc-advocacy.webp` | Pexels photo 9870140 |
+| `expect-hours.webp` | Pexels photo 14299948 |
+| `expect-online.webp` | Pexels photo 27176547 |
+| `expect-languages.webp` | Pexels photo 30689324 |
+
+Photo pages: `https://www.pexels.com/photo/<id>/`. Pexels photos show models, not clients of the practice.
