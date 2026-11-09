@@ -46,5 +46,8 @@ Service and "What to expect" photos are from [Pexels](https://www.pexels.com/lic
 | `expect-hours.webp` | Pexels photo 14299948 |
 | `expect-online.webp` | Pexels photo 27176547 |
 | `expect-languages.webp` | Pexels photo 30689324 |
+| `expect-inperson.webp` | Pexels photo 5234687 |
+| `callback-home.webp` | Pexels photo 8279490 |
+| `about-office.webp` | Pexels photo 28461045 |
 
 Photo pages: `https://www.pexels.com/photo/<id>/`. Pexels photos show models, not clients of the practice.

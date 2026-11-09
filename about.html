@@ -818,6 +818,52 @@ footer::after{content:"";position:absolute;z-index:-1;width:98px;height:98px;lef
   #org-h{font-size:1.3rem}
 }
 </style>
+<style>
+/* ===== v12: one look on every page ===== */
+/* one font for every card and list title: Lora, like the home page */
+.acc summary b,.orgs b,.values b,.steps3 b,.steps b,.faq summary,.way b,.flip-trigger b,.meet b,.cta-side b,.xt b,.stile b{font-family:var(--head)!important;font-weight:600!important}
+.faq summary{color:var(--deep)}
+
+/* services page: the same photo tiles as the home page, all lined up */
+.acc.photos{align-items:start}
+.acc.photos>li{display:flex;flex-direction:column}
+.acc.photos details{background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
+.acc.photos details:hover{box-shadow:none!important}
+.acc.photos summary .pic{border-radius:18px;box-shadow:0 2px 6px rgba(43,61,50,.06),0 10px 22px rgba(43,61,50,.08)}
+.acc.photos summary .txt{text-align:center!important;padding:10px 4px 0!important}
+.acc.photos summary b{color:var(--terra-text)!important;font-size:1rem;line-height:1.25}
+.acc.photos summary .txt>span{display:block;font-size:.9rem;margin-top:2px}
+.acc.photos .body{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-top:10px;padding:14px!important}
+@media (prefers-reduced-motion:no-preference){.acc.photos summary .pic img{transition:transform .5s ease}.acc.photos summary:hover .pic img{transform:scale(1.06)}}
+@media (max-width:719px){.acc.photos summary .txt>span{display:none}}
+
+/* "What we stand for": six interlinked circles */
+section[aria-labelledby="val-h"] .wrap{text-align:center}
+section[aria-labelledby="val-h"] .eyebrow{justify-content:center}
+.values{display:flex!important;flex-wrap:wrap;justify-content:center;gap:0!important;max-width:640px;margin:28px auto 0!important;padding:0;position:relative;isolation:isolate}
+.values::before{content:"";position:absolute;inset:6% 10%;z-index:-1;border-radius:50%;border:2px dashed var(--terra-mid);opacity:.7}
+.values li{width:210px;height:210px;margin:-9px!important;padding:26px!important;border-radius:50%!important;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:0!important;box-shadow:none!important;mix-blend-mode:multiply}
+.values li::after{display:none!important}
+.values li:nth-child(1){background:rgba(239,201,181,.85)!important}
+.values li:nth-child(2){background:rgba(223,231,218,.95)!important}
+.values li:nth-child(3){background:rgba(251,232,204,.95)!important}
+.values li:nth-child(4){background:rgba(230,237,226,.95)!important}
+.values li:nth-child(5){background:rgba(247,226,214,.95)!important}
+.values li:nth-child(6){background:rgba(211,224,205,.9)!important}
+.values b{font-size:1.12rem;color:var(--terra-text)!important}
+.values span{font-size:.95rem;color:var(--fg)!important;margin-top:4px;line-height:1.35}
+@media (prefers-reduced-motion:no-preference){.values li{transition:transform .35s cubic-bezier(.2,.75,.25,1)}.values li:hover{transform:scale(1.05)!important;z-index:2}}
+@media (max-width:559px){.values{max-width:330px}.values li{width:158px;height:158px;padding:16px!important;margin:-6px!important}.values b{font-size:1rem}.values span{font-size:.84rem}}
+
+/* background bubbles: slower and gentler; cards still lift on hover */
+@keyframes bobA{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@keyframes bobB{0%,100%{translate:0 0}50%{translate:5px 5px}}
+@media (prefers-reduced-motion:no-preference){
+  main>section::before,main>section::after,main>section>.wrap::after,.hero::before,.hero::after,.page-head::before{animation-duration:16s!important}
+  main>section:nth-of-type(even)::before,main>section:nth-of-type(even)::after,main>section:nth-of-type(even)>.wrap::after{animation-duration:19s!important}
+  .portrait img{animation-duration:12s!important}
+}
+</style>
 <a class="skip" href="#main">Skip to content</a>
 <header>
   <div class="wrap head">
@@ -845,7 +891,7 @@ footer::after{content:"";position:absolute;z-index:-1;width:98px;height:98px;lef
     <div class="actions"><a class="btn btn-wa" href="https://wa.me/27728311001?text=Hello%2C%20I%20found%20you%20on%20your%20website.%20I%20would%20like%20to%20book%20a%20session." target="_blank" rel="noopener" data-contact="whatsapp" data-loc="about"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>Chat on WhatsApp</a><a class="btn btn-call" href="tel:+27728311001" data-contact="call" data-loc="about"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>Give us a call</a></div>
   </div>
 </div></section>
-<section style="padding-block:0"><div class="wrap"><figure class="wide-photo"><img src="assets/session-wide.webp" alt="A therapist and a client talking in a calm, private room" width="1400" height="534" loading="lazy"><figcaption class="ph-note">Photo for illustration</figcaption></figure></div></section>
+<section style="padding-block:0"><div class="wrap"><figure class="wide-photo"><img src="assets/about-office.webp" alt="A quiet counselling room with an armchair, plants and soft light" width="1400" height="788" loading="lazy"><figcaption class="ph-note">Photo for illustration</figcaption></figure></div></section>
 <section aria-labelledby="promise-h"><div class="wrap"><div class="cta-panel" data-reveal><span class="eyebrow">Our promise</span><h2 id="promise-h">Walking <em>alongside</em> you</h2><p>We walk alongside you with compassion, professionalism and respect. Our goal is to restore hope, strengthen families and support emotional and social wellbeing in Soweto and beyond.</p></div></div></section>
 <section class="sage" aria-labelledby="val-h"><div class="wrap"><span class="eyebrow">Our values</span><h2 id="val-h">What we stand for</h2><ul class="values"><li data-reveal><b>Ubuntu</b><span>Compassion and respect.</span></li><li data-reveal><b>Confidentiality</b><span>Protecting your privacy.</span></li><li data-reveal><b>Empowerment</b><span>Building your strength.</span></li><li data-reveal><b>Equity</b><span>Open to everyone.</span></li><li data-reveal><b>Self-determination</b><span>Your choices, respected.</span></li><li data-reveal><b>Integrity</b><span>Guided by the SACSSP Code of Conduct.</span></li></ul></div></section>
 </main>

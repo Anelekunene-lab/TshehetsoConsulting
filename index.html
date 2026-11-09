@@ -824,6 +824,52 @@ footer::after{content:"";position:absolute;z-index:-1;width:98px;height:98px;lef
 .mapgrid img{height:180px}
 @media (max-width:559px){.mapgrid img{height:150px}}
 </style>
+<style>
+/* ===== v12: one look on every page ===== */
+/* one font for every card and list title: Lora, like the home page */
+.acc summary b,.orgs b,.values b,.steps3 b,.steps b,.faq summary,.way b,.flip-trigger b,.meet b,.cta-side b,.xt b,.stile b{font-family:var(--head)!important;font-weight:600!important}
+.faq summary{color:var(--deep)}
+
+/* services page: the same photo tiles as the home page, all lined up */
+.acc.photos{align-items:start}
+.acc.photos>li{display:flex;flex-direction:column}
+.acc.photos details{background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}
+.acc.photos details:hover{box-shadow:none!important}
+.acc.photos summary .pic{border-radius:18px;box-shadow:0 2px 6px rgba(43,61,50,.06),0 10px 22px rgba(43,61,50,.08)}
+.acc.photos summary .txt{text-align:center!important;padding:10px 4px 0!important}
+.acc.photos summary b{color:var(--terra-text)!important;font-size:1rem;line-height:1.25}
+.acc.photos summary .txt>span{display:block;font-size:.9rem;margin-top:2px}
+.acc.photos .body{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-top:10px;padding:14px!important}
+@media (prefers-reduced-motion:no-preference){.acc.photos summary .pic img{transition:transform .5s ease}.acc.photos summary:hover .pic img{transform:scale(1.06)}}
+@media (max-width:719px){.acc.photos summary .txt>span{display:none}}
+
+/* "What we stand for": six interlinked circles */
+section[aria-labelledby="val-h"] .wrap{text-align:center}
+section[aria-labelledby="val-h"] .eyebrow{justify-content:center}
+.values{display:flex!important;flex-wrap:wrap;justify-content:center;gap:0!important;max-width:640px;margin:28px auto 0!important;padding:0;position:relative;isolation:isolate}
+.values::before{content:"";position:absolute;inset:6% 10%;z-index:-1;border-radius:50%;border:2px dashed var(--terra-mid);opacity:.7}
+.values li{width:210px;height:210px;margin:-9px!important;padding:26px!important;border-radius:50%!important;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:0!important;box-shadow:none!important;mix-blend-mode:multiply}
+.values li::after{display:none!important}
+.values li:nth-child(1){background:rgba(239,201,181,.85)!important}
+.values li:nth-child(2){background:rgba(223,231,218,.95)!important}
+.values li:nth-child(3){background:rgba(251,232,204,.95)!important}
+.values li:nth-child(4){background:rgba(230,237,226,.95)!important}
+.values li:nth-child(5){background:rgba(247,226,214,.95)!important}
+.values li:nth-child(6){background:rgba(211,224,205,.9)!important}
+.values b{font-size:1.12rem;color:var(--terra-text)!important}
+.values span{font-size:.95rem;color:var(--fg)!important;margin-top:4px;line-height:1.35}
+@media (prefers-reduced-motion:no-preference){.values li{transition:transform .35s cubic-bezier(.2,.75,.25,1)}.values li:hover{transform:scale(1.05)!important;z-index:2}}
+@media (max-width:559px){.values{max-width:330px}.values li{width:158px;height:158px;padding:16px!important;margin:-6px!important}.values b{font-size:1rem}.values span{font-size:.84rem}}
+
+/* background bubbles: slower and gentler; cards still lift on hover */
+@keyframes bobA{0%,100%{translate:0 0}50%{translate:0 -6px}}
+@keyframes bobB{0%,100%{translate:0 0}50%{translate:5px 5px}}
+@media (prefers-reduced-motion:no-preference){
+  main>section::before,main>section::after,main>section>.wrap::after,.hero::before,.hero::after,.page-head::before{animation-duration:16s!important}
+  main>section:nth-of-type(even)::before,main>section:nth-of-type(even)::after,main>section:nth-of-type(even)>.wrap::after{animation-duration:19s!important}
+  .portrait img{animation-duration:12s!important}
+}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -855,7 +901,7 @@ footer::after{content:"";position:absolute;z-index:-1;width:98px;height:98px;lef
       <a class="xt" href="contact.html#where"><span class="k">Where</span><b>Protea Glen, Soweto</b><span class="s">Ext. 40 (Copper St) &amp; Ext. 28 (Nutmeg St) · Directions</span></a>
     </div></li>
     <li data-reveal style="--d:1"><a class="xcard" href="contact.html#hours"><span class="pic" data-label="Photo coming soon"><img src="assets/expect-hours.webp" alt="An appointment diary and phone on a desk" loading="lazy" onerror="this.remove()"></span><span class="xt"><span class="k">Visits</span><b>By appointment</b><span class="s">Mon–Fri 09:00–16:00 · Sat 09:00–14:00</span></span></a></li>
-    <li data-reveal style="--d:2"><a class="xcard" href="contact.html#where"><span class="pic" data-label="Photo coming soon"><img src="assets/session.webp" alt="A therapist listening to a client in a warm, private room" loading="lazy" onerror="this.remove()"></span><span class="xt"><span class="k">In person</span><b>Our rooms in Protea Glen</b><span class="s">A private, quiet space to talk</span></span></a></li>
+    <li data-reveal style="--d:2"><a class="xcard" href="contact.html#where"><span class="pic" data-label="Photo coming soon"><img src="assets/expect-inperson.webp" alt="A therapist and a client talking in a calm room" loading="lazy" onerror="this.remove()"></span><span class="xt"><span class="k">In person</span><b>Our rooms in Protea Glen</b><span class="s">A private, quiet space to talk</span></span></a></li>
     <li data-reveal style="--d:3"><a class="xcard" href="#callback"><span class="pic" data-label="Photo coming soon"><img src="assets/expect-online.webp" alt="A woman in a video counselling session on her laptop at home" loading="lazy" onerror="this.remove()"></span><span class="xt"><span class="k">Online</span><b>Video sessions</b><span class="s">On your phone or computer, wherever you are</span></span></a></li>
     <li data-reveal style="--d:4"><a class="xcard" href="about.html#languages"><span class="pic" data-label="Photo coming soon"><img src="assets/expect-languages.webp" alt="Two women talking and laughing together" loading="lazy" onerror="this.remove()"></span><span class="xt"><span class="k">Languages</span><b>Sesotho, Setswana, Sepedi, isiZulu, English</b><span class="s">Also a little Xitsonga and Afrikaans</span></span></a></li>
     <li class="xfee" data-reveal style="--d:5"><a class="xcard" href="services.html#fees"><span class="pic" data-label="Photo coming soon"><img src="assets/expect-medical.webp" alt="A medical aid card handed over at a reception desk" loading="lazy" onerror="this.remove()"></span><span class="xt"><span class="k">Fee &amp; medical aid</span><b>R650 per session</b><span class="s">Bonitas, Polmed, Bankmed, GEMS and Discovery accepted</span></span></a></li>
@@ -873,7 +919,7 @@ footer::after{content:"";position:absolute;z-index:-1;width:98px;height:98px;lef
   <div class="cb-intro">
     <span class="eyebrow">Prefer a call back?</span><h2 id="cb-h">We&#x27;ll <em>call you</em></h2>
     <p>Leave your name and number. We&#x27;ll call you back during office hours, and the call costs you nothing.</p>
-    <figure class="cb-photo"><img src="assets/session.webp" alt="A therapist listening to a client in a warm, private room" width="1100" height="685" loading="lazy"><figcaption>A private, unhurried space to talk, <b>in person or online</b>.</figcaption></figure>
+    <figure class="cb-photo"><img src="assets/callback-home.webp" alt="A woman smiling on a phone call at home" width=" 1100" height=" 685" loading="lazy"><figcaption>A private, unhurried space to talk, <b>in person or online</b>.</figcaption></figure>
   </div>
   <div class="cb-side">
     <form class="cb-form" id="cb-form" novalidate>
