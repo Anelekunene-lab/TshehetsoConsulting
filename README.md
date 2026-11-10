@@ -32,14 +32,14 @@ Service and "What to expect" photos are from [Pexels](https://www.pexels.com/lic
 | File | Source |
 |---|---|
 | `svc-stress.webp`, `expect-medical.webp` | Generated with Gamma AI |
-| `svc-grief.webp` | Pexels photo 14838568 |
+| `svc-grief.webp` | Pexels photo 7239089 |
 | `svc-trauma.webp` | Pexels photo 5699489 |
 | `svc-family.webp` | Pexels photo 12788362 |
 | `svc-parenting.webp` | Pexels photo 9870222 |
 | `svc-youth.webp` | Pexels photo 36729613 |
 | `svc-gbv.webp` | Pexels photo 8996007 |
 | `svc-substance.webp` | Pexels photo 7579301 |
-| `svc-hiv.webp` | Pexels photo 37191912 |
+| `svc-hiv.webp` | Pexels photo 10665639 |
 | `svc-group.webp` | Pexels photo 8556340 |
 | `svc-advocacy.webp` | Pexels photo 9870140 |
 | `expect-hours.webp` | Pexels photo 14299948 |
